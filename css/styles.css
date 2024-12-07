@@ -11,6 +11,51 @@ body {
 a {
   text-decoration: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header-page .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.hero .main-title {
+}
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section-hero-list {
+  display: flex;
+}
+.nav-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 ul,
 ol {
@@ -33,6 +78,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  text-decoration: none;
+  margin-right: 76px;
 }
 
 .logo-style {
@@ -44,6 +91,8 @@ button {
   font-weight: 500;
   text-decoration: none;
   color: #2e2f42;
+  display: flex;
+  gap: 40px;
 }
 
 .address-header {
@@ -55,6 +104,9 @@ button {
   font-weight: 400;
   color: #434455;
   text-decoration: none;
+  padding: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 
 .address-link:hover,
@@ -68,6 +120,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 
 .nav-item-link:hover,
@@ -80,9 +135,22 @@ button {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.1;
+  text-align: center;
+  color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
 }
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.hero.container {
+  width: 496px;
+  padding-top: 188px;
+  padding-bottom: 292px;
+  padding-left: 472px;
+  padding-right: 472px;
 }
 .main-title {
   font-weight: 700;
@@ -91,14 +159,28 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  padding-bottom: 292px;
+  padding-top: 188px;
+  padding-left: 472px;
+  padding-right: 472px;
 }
-
+.section-hero-list {
+  padding-left: 156px;
+  padding-right: 156px;
+  color: #434455;
+  display: flex;
+  gap: 24px;
+}
+.section-hero-item {
+  width: 264px;
+}
 .info-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .text-title {
   font-weight: 400;
@@ -112,12 +194,14 @@ button {
 }
 .section-team {
   background-color: #f4f4fd;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .team-list {
   background-color: #ffffff;
@@ -127,9 +211,17 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
 }
+.our-port-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
 .prof-name-title {
   font-weight: 400;
   font-size: 16px;
@@ -147,6 +239,29 @@ button {
   text-transform: capitalize;
   color: #2e2f42;
 }
+.project-card {
+  flex-direction: column;
+  flex-basis: calc((100% - 72px) / 4);
+}
+.our-port-list .project-card {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.section-team-list {
+  gap: 24px;
+}
+.section-team-list .project-card {
+  background-color: white;
+  border-radius: 0px 0px 4px 4px;
+}
+.team-box {
+  padding: 32px 0;
+}
+.cont-list {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .content-card-list {
   font-weight: 500;
   font-size: 20px;
@@ -170,8 +285,16 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
+  width: 169px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
-
 .hero-btn:hover,
 .hero-btn:focus {
   color: #ffffff;
@@ -190,7 +313,13 @@ button {
 }
 .footer-page {
   background-color: #2e2f42;
+  padding: 100px 0 100px 0;
 }
+.footer-page .logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .logo-style-footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
