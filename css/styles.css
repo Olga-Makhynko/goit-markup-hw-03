@@ -167,15 +167,9 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  padding-bottom: 292px;
-  padding-top: 188px;
-  padding-left: 472px;
-  padding-right: 472px;
   max-width: 496px;
 }
 .section-hero-list {
-  padding-left: 156px;
-  padding-right: 156px;
   color: #434455;
   display: flex;
   gap: 24px;
@@ -193,6 +187,9 @@ button {
 }
 .section-hero-item {
   width: 264px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100%-72px) / 4);
 }
 .info-title {
   font-weight: 500;
@@ -228,6 +225,7 @@ button {
 }
 .team-list {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 .name-title {
   font-weight: 500;
@@ -264,10 +262,12 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .project-card {
   flex-direction: column;
   flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .our-port-list > .project-card {
   flex-basis: calc((100% - 48px) / 3);
