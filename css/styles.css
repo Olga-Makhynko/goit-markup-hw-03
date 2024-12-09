@@ -258,19 +258,23 @@ button {
   flex-direction: column;
   flex-basis: calc((100% - 72px) / 4);
 }
-.our-port-list .project-card {
+.our-port-list > .project-card {
   flex-basis: calc((100% - 48px) / 3);
+  border-radius: 0px 0px 4px 4px;
 }
 .section-team-list {
   gap: 24px;
   display: flex;
 }
-.section-team-list .project-card {
+.section-team-list > .team-list {
   background-color: white;
-  border-radius: 0px 0px 4px 4px;
 }
 .team-box {
   padding: 32px 0;
+  padding-bottom: 32px;
+}
+.about-team {
+  padding-top: 32px;
 }
 .cont-list {
   padding: 32px 16px;
